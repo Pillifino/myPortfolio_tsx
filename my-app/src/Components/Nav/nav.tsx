@@ -22,7 +22,7 @@ function Nav() {
         <Flex
           // bg="red"
           h="100%"
-          w="60%"
+          w="65%"
           alignItems="center"
         >
           <Heading
@@ -58,7 +58,7 @@ function Nav() {
         <Flex
           // bg="blue"
           h="100%"
-          w="40%"
+          w="35%"
           alignItems="center"
           pt="2"
           pl="20"
