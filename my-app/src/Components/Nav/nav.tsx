@@ -60,6 +60,7 @@ function Nav() {
           h="100%"
           w="40%"
           alignItems="center"
+          pt="2"
           pl="20"
         >
           <Link href="https://github.com/Pillifino" target="_blank">
@@ -76,8 +77,8 @@ function Nav() {
           <Spacer/>
           <Flex
           border="solid white 1px"
-          h="65%"
-          w="30%"
+          h="75%"
+          w="35%"
           alignItems="center"
           justify="center"
           >
