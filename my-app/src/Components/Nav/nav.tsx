@@ -15,6 +15,8 @@ function Nav() {
         h="12vh"
         position="fixed"
         justify="space-evenly"
+        pl={["0","0","10","10"]}
+        pr={["0","0","10","10"]}
       >
         {/* Logo & Sections */}
         <Flex
@@ -59,7 +61,6 @@ function Nav() {
           w="40%"
           alignItems="center"
           pl="20"
-          pr="10"
         >
           <Link href="https://github.com/Pillifino" target="_blank">
             <Icon as={FaGithub} boxSize="1.5em" color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
