@@ -27,7 +27,7 @@ function Container() {
         <Flex
         // bg="red"
         width="100%"
-        justify="center"
+        justify="flex-start"
         flexDirection="column"
         >
           <Skills/>
