@@ -17,6 +17,7 @@ function Nav() {
         justify="space-evenly"
         pl={["0","0","10","10"]}
         pr={["0","0","10","10"]}
+        zIndex="100"
       >
         {/* Logo & Sections */}
         <Flex
