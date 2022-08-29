@@ -12,7 +12,7 @@ function Home() {
     <div>
       <Nav />
       <Flex
-        width="100%"
+        width="100vw"
         height="80vh"
         position="relative"
       >

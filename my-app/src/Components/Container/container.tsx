@@ -22,12 +22,14 @@ function Container() {
       <Flex
       bg="bg"
       height="2000px"
+      w="100vw"
       justify="center"
       >
         <Flex
         // bg="red"
-        width="100%"
+        width="100vw"
         justify="flex-start"
+        alignItems="center"
         flexDirection="column"
         >
           <Skills/>
