@@ -11,16 +11,10 @@ function Skills() {
       <Flex
         // bg="green"
         width="100vw"
-        height="60vh"
+        height="50vh"
         justify="center"
       >
-        <Container
-          // bg="white"
-          height="100%"
-          maxWidth="80%"
-        >
           <SkillCard />
-        </Container>
       </Flex>
     </div>
   )
