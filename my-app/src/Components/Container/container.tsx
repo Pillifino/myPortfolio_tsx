@@ -25,9 +25,10 @@ function Container() {
       justify="center"
       >
         <Flex
-        bg="red"
-        width="80%"
+        // bg="red"
+        width="100%"
         justify="center"
+        flexDirection="column"
         >
           <Skills/>
           <Projects/>
