@@ -3,6 +3,7 @@ import React from 'react'
 import ContactBackground from "../../Assets/Images/contact.jpg"
 
 import { Flex, Image, FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Text } from "@chakra-ui/react"
+import RateCard from '../../Components/Ratecard/rateCard'
 
 function Contact() {
   return (
@@ -13,6 +14,8 @@ function Contact() {
         w="100vw"
         position="relative"
         justify="center"
+        alignItems="center"
+        flexDirection="column"
       >
         <Image
           src={ContactBackground}
@@ -30,12 +33,13 @@ function Contact() {
           alignItems="center"
           h="100%"
           w="80%"
+          pt="7vh"
         >
           <Text
-          // bg="blue"
-          w="100%"
-          fontSize="3xl"
-          color="white"
+            // bg="blue"
+            w="100%"
+            fontSize="4xl"
+            color="white"
           >
             Contact Me
           </Text>
@@ -91,6 +95,7 @@ function Contact() {
               borderRadius="20px"
             />
           </FormControl>
+          <RateCard />
         </Flex>
       </Flex>
     </div>

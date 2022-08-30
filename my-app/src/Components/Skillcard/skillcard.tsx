@@ -2,8 +2,6 @@ import React from 'react'
 
 import { Flex, Text } from '@chakra-ui/react'
 
-import Carousel from '../Carousel/carousel'
-
 function SkillCard() {
   return (
     <div>
@@ -29,7 +27,7 @@ function SkillCard() {
         fontSize="2xl">
           Skills
         </Text>
-        <Carousel/>
+        {/* Carousel here */}
       </Flex>
     </div>
   )
