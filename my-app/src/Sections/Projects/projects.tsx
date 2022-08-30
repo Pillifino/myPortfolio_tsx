@@ -6,12 +6,11 @@ function Projects() {
     <div>
       <Flex
         bg="black"
-        mt="60vh"
         w="100vw"
         height="90vh"
       >
         <Container
-          // bg="white"
+          bg="white"
           height="100%"
           maxWidth="80%"
         >
