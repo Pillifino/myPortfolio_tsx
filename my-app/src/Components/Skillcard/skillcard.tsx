@@ -10,7 +10,7 @@ function SkillCard() {
   const ref = useRef(null)
   const isInView = useInView(ref)
   return (
-    <div id='skills'>
+    <div>
       <Flex ref={ref}
         style={{
           transform: isInView ? "none" : "translatey(200px)",

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import ReactDOM from 'react-dom'
 
 import { Flex, Heading, Spacer, Text, Icon } from '@chakra-ui/react'
 
@@ -6,7 +7,11 @@ import { Flex, Heading, Spacer, Text, Icon } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
+// Smooth Scroll
+
+
 function Nav() {
+
   return (
     <div>
       <Flex
@@ -38,27 +43,27 @@ function Nav() {
             fontSize="md"
             color="white"
           >
-            <Link href='#home' style={{textDecoration:"none"}}>
+            <a href='#home' style={{textDecoration:"none"}}>
               Home
-            </Link>
+            </a>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            <Link href='#skills' style={{textDecoration:"none"}}>
+            <a href='#skills' style={{textDecoration:"none"}}>
               Skills
-            </Link>
+            </a>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            <Link href='#projects' style={{textDecoration:"none"}}>
+            <a href='#projects' style={{textDecoration:"none"}}>
               Projects
-            </Link>
+            </a>
           </Text>
         </Flex>
         {/* Contact */}

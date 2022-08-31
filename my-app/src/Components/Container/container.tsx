@@ -16,7 +16,7 @@ import { Flex } from "@chakra-ui/react";
 function Container() {
   return (
     <>
-      <div id="home"><Home /></div>
+      <section id="home"><Home /></section>
       <Flex
         bg="bg"
         height="300vh"
@@ -30,7 +30,7 @@ function Container() {
           alignItems="center"
           flexDirection="column"
         >
-            <Skills />
+            <section id="skills"><Skills /></section>
             <div id="projects"><Projects /></div>
             <div id="contact"><Contact /></div>
           <Footer />
