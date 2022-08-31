@@ -44,7 +44,7 @@ function RateCard() {
           <Spacer/>
           <Spacer/>
           <Button 
-          colorScheme='blue'
+          // colorScheme='dark'
           bg="white"
           w="30%"
           h="60%"
@@ -55,7 +55,7 @@ function RateCard() {
           </Button>
           <Spacer/>
           <Button 
-          colorScheme='blue'
+          // colorScheme='blue'
           bg="bgAccent"
           w="30%"
           h="60%"
