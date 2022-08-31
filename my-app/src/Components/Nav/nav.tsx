@@ -1,13 +1,19 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import ReactDOM from 'react-dom'
 
-import { Flex, Heading, Spacer, Text, Icon } from '@chakra-ui/react'
+import { Flex, Heading, Spacer, Text, Icon, IconButton, Link, Button } from '@chakra-ui/react'
 
 // Icons stuff
-import { Link } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-
-// Smooth Scroll
+import { AiOutlineMenu } from 'react-icons/ai'
+// Menu
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from '@chakra-ui/react'
 
 
 function Nav() {
@@ -23,6 +29,7 @@ function Nav() {
         pl={["0", "0", "10", "10"]}
         pr={["0", "0", "10", "10"]}
         zIndex="100"
+        display={["none", "flex", "flex", "flex"]}
       >
         {/* Logo & Sections */}
         <Flex
@@ -43,27 +50,27 @@ function Nav() {
             fontSize="md"
             color="white"
           >
-            <a href='#home' style={{textDecoration:"none"}}>
+            <Link href='#home' style={{ textDecoration: "none" }}>
               Home
-            </a>
+            </Link>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            <a href='#skills' style={{textDecoration:"none"}}>
+            <Link href='#skills' style={{ textDecoration: "none" }}>
               Skills
-            </a>
+            </Link>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            <a href='#projects' style={{textDecoration:"none"}}>
+            <Link href='#projects' style={{ textDecoration: "none" }}>
               Projects
-            </a>
+            </Link>
           </Text>
         </Flex>
         {/* Contact */}
@@ -97,12 +104,64 @@ function Nav() {
             <Text
               color="white"
             >
-              <Link href='#contact' style={{textDecoration:"none"}}>
+              <Link href='#contact' style={{ textDecoration: "none" }}>
                 Let's Connect
               </Link>
             </Text>
           </Flex>
         </Flex>
+      </Flex>
+      {/* Mobile */}
+      <Flex
+        bg="Black"
+        w="100%"
+        h="12vh"
+        position="fixed"
+        justify="space-between"
+        alignItems="center"
+        pl={["5", "5", "0", "0"]}
+        pr={["5", "5", "0", "0"]}
+        zIndex="100"
+        display={["flex", "flex", "flex", "none"]}
+      >
+        <Heading
+          color="white"
+        >
+          My Portfolio
+        </Heading>
+        <Menu>
+          <MenuButton
+            as={IconButton}
+            aria-label='Options'
+            icon={<AiOutlineMenu size="2em" />}
+            variant='none'
+            border="none"
+            color="white"
+          // color="white"
+          />
+          <MenuList>
+            <Link href='#home' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Home
+              </MenuItem>
+            </Link>
+            <Link href='#skills' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Skills
+              </MenuItem>
+            </Link>
+            <Link href='#projects' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Projects
+              </MenuItem>
+            </Link>
+            <Link href='#contact' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Contact Me
+              </MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
       </Flex>
     </div>
   )
