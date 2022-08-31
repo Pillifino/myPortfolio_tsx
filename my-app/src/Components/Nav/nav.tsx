@@ -15,8 +15,8 @@ function Nav() {
         h="12vh"
         position="fixed"
         justify="space-evenly"
-        pl={["0","0","10","10"]}
-        pr={["0","0","10","10"]}
+        pl={["0", "0", "10", "10"]}
+        pr={["0", "0", "10", "10"]}
         zIndex="100"
       >
         {/* Logo & Sections */}
@@ -38,21 +38,27 @@ function Nav() {
             fontSize="md"
             color="white"
           >
-            Home
+            <Link href='#home' style={{textDecoration:"none"}}>
+              Home
+            </Link>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            Skills
+            <Link href='#skills' style={{textDecoration:"none"}}>
+              Skills
+            </Link>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            Projects
+            <Link href='#projects' style={{textDecoration:"none"}}>
+              Projects
+            </Link>
           </Text>
         </Flex>
         {/* Contact */}
@@ -65,28 +71,30 @@ function Nav() {
           pl="20"
         >
           <Link href="https://github.com/Pillifino" target="_blank">
-            <Icon as={FaGithub} boxSize="1.5em" color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
+            <Icon as={FaGithub} boxSize="1.5em" color="White" _hover={{ boxSize: "1.8em" }} transition=".3s" />
           </Link>
-          <Spacer/>
+          <Spacer />
           <Link href='https://www.linkedin.com/in/berrnarddinodizon/' target="_blank">
-            <Icon as={FaLinkedin} boxSize="1.5em" color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
+            <Icon as={FaLinkedin} boxSize="1.5em" color="White" _hover={{ boxSize: "1.8em" }} transition=".3s" />
           </Link>
-          <Spacer/>
+          <Spacer />
           <Link href='https://twitter.com/Devsea_Dino' target="_blank">
-            <Icon as={FaTwitter} boxSize="1.5em" transform={{ boxSize: "6em" }} color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
+            <Icon as={FaTwitter} boxSize="1.5em" transform={{ boxSize: "6em" }} color="White" _hover={{ boxSize: "1.8em" }} transition=".3s" />
           </Link>
-          <Spacer/>
+          <Spacer />
           <Flex
-          border="solid white 1px"
-          h="75%"
-          w="35%"
-          alignItems="center"
-          justify="center"
+            border="solid white 1px"
+            h="75%"
+            w="35%"
+            alignItems="center"
+            justify="center"
           >
             <Text
-            color="white"
+              color="white"
             >
-              Let's Connect
+              <Link href='#contact' style={{textDecoration:"none"}}>
+                Let's Connect
+              </Link>
             </Text>
           </Flex>
         </Flex>
