@@ -21,7 +21,7 @@ function Container() {
     <Home/>
       <Flex
       bg="bg"
-      height="2000px"
+      height="300vh"
       w="100vw"
       justify="center"
       >
@@ -35,6 +35,7 @@ function Container() {
           <Skills/>
           <Projects/>
           <Contact/>
+          <Footer/>
         </Flex>
       </Flex>
     </>
