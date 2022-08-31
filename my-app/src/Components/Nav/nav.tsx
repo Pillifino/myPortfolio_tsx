@@ -10,7 +10,7 @@ function Nav() {
   return (
     <div>
       <Flex
-        // bg="Black"
+        bg="Black"
         w="100%"
         h="12vh"
         position="fixed"
