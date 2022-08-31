@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom'
 import { Flex, Heading, Spacer, Text, Icon, IconButton, Link, Button } from '@chakra-ui/react'
 
 // Icons stuff
-import { HamburgerIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { AiOutlineMenu } from 'react-icons/ai'
 // Menu
