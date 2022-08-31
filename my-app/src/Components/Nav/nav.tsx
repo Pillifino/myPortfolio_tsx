@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import ReactDOM from 'react-dom'
 
-import { Flex, Heading, Spacer, Text, Icon } from '@chakra-ui/react'
+import { Flex, Heading, Spacer, Text, Icon, IconButton, Link, Button } from '@chakra-ui/react'
 
 // Icons stuff
-import { Link } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { AiOutlineMenu } from 'react-icons/ai'
+// Menu
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from '@chakra-ui/react'
+
 
 function Nav() {
+
   return (
     <div>
       <Flex
@@ -15,9 +26,10 @@ function Nav() {
         h="12vh"
         position="fixed"
         justify="space-evenly"
-        pl={["0","0","10","10"]}
-        pr={["0","0","10","10"]}
+        pl={["0", "0", "10", "10"]}
+        pr={["0", "0", "10", "10"]}
         zIndex="100"
+        display={["none", "flex", "flex", "flex"]}
       >
         {/* Logo & Sections */}
         <Flex
@@ -38,21 +50,27 @@ function Nav() {
             fontSize="md"
             color="white"
           >
-            Home
+            <Link href='#home' style={{ textDecoration: "none" }}>
+              Home
+            </Link>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            Skills
+            <Link href='#skills' style={{ textDecoration: "none" }}>
+              Skills
+            </Link>
           </Text>
           <Spacer />
           <Text
             fontSize="md"
             color="white"
           >
-            Projects
+            <Link href='#projects' style={{ textDecoration: "none" }}>
+              Projects
+            </Link>
           </Text>
         </Flex>
         {/* Contact */}
@@ -65,31 +83,85 @@ function Nav() {
           pl="20"
         >
           <Link href="https://github.com/Pillifino" target="_blank">
-            <Icon as={FaGithub} boxSize="1.5em" color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
+            <Icon as={FaGithub} boxSize="1.5em" color="White" _hover={{ boxSize: "1.8em" }} transition=".3s" />
           </Link>
-          <Spacer/>
+          <Spacer />
           <Link href='https://www.linkedin.com/in/berrnarddinodizon/' target="_blank">
-            <Icon as={FaLinkedin} boxSize="1.5em" color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
+            <Icon as={FaLinkedin} boxSize="1.5em" color="White" _hover={{ boxSize: "1.8em" }} transition=".3s" />
           </Link>
-          <Spacer/>
+          <Spacer />
           <Link href='https://twitter.com/Devsea_Dino' target="_blank">
-            <Icon as={FaTwitter} boxSize="1.5em" transform={{ boxSize: "6em" }} color="White" _hover={{ boxSize:"1.8em" }} transition=".3s" />
+            <Icon as={FaTwitter} boxSize="1.5em" transform={{ boxSize: "6em" }} color="White" _hover={{ boxSize: "1.8em" }} transition=".3s" />
           </Link>
-          <Spacer/>
+          <Spacer />
           <Flex
-          border="solid white 1px"
-          h="75%"
-          w="35%"
-          alignItems="center"
-          justify="center"
+            border="solid white 1px"
+            h="75%"
+            w="35%"
+            alignItems="center"
+            justify="center"
           >
             <Text
-            color="white"
+              color="white"
             >
-              Let's Connect
+              <Link href='#contact' style={{ textDecoration: "none" }}>
+                Let's Connect
+              </Link>
             </Text>
           </Flex>
         </Flex>
+      </Flex>
+      {/* Mobile */}
+      <Flex
+        bg="Black"
+        w="100%"
+        h="12vh"
+        position="fixed"
+        justify="space-between"
+        alignItems="center"
+        pl={["5", "5", "0", "0"]}
+        pr={["5", "5", "0", "0"]}
+        zIndex="100"
+        display={["flex", "flex", "flex", "none"]}
+      >
+        <Heading
+          color="white"
+        >
+          My Portfolio
+        </Heading>
+        <Menu>
+          <MenuButton
+            as={IconButton}
+            aria-label='Options'
+            icon={<AiOutlineMenu size="2em" />}
+            variant='none'
+            border="none"
+            color="white"
+          // color="white"
+          />
+          <MenuList>
+            <Link href='#home' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Home
+              </MenuItem>
+            </Link>
+            <Link href='#skills' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Skills
+              </MenuItem>
+            </Link>
+            <Link href='#projects' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Projects
+              </MenuItem>
+            </Link>
+            <Link href='#contact' style={{ textDecoration: "none" }}>
+              <MenuItem>
+                Contact Me
+              </MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
       </Flex>
     </div>
   )
