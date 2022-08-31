@@ -4,7 +4,7 @@ import React from "react";
 import Nav from "../../Components/Nav/nav";
 
 // Image
-import { Container, Flex, Image, Text, AspectRatio } from '@chakra-ui/react'
+import { Flex, Image, Text } from '@chakra-ui/react'
 import Background from "../../Assets/Images/background.jpg";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
       <Nav />
       <Flex
         width="100vw"
-        height="80vh"
+        height="120vh"
         position="relative"
       >
         <Image
@@ -31,11 +31,11 @@ function Home() {
           bg="rgba(0,0,0,0.50)"
           border="solid white .8px"
           color="white"
-          fontSize="3xl"
+          fontSize="5xl"
           textAlign="center"
           position="absolute"
           top="0"
-          bottom="40"
+          bottom="60vh"
           left="0"
           right="0"
           height="fit-content"
@@ -46,11 +46,11 @@ function Home() {
           bg="rgba(105,105,105,0.70)"
           border="solid white .8px"
           color="white"
-          fontSize="sm"
+          fontSize="md"
           textAlign="center"
           position="absolute"
           top="0"
-          bottom="14"
+          bottom="40vh"
           left="0"
           right="0"
           height="fit-content"
