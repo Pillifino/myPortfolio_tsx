@@ -1,7 +1,7 @@
-import image1 from './Assets/Images/splat.jpg'
-import image2 from './Assets/Images/splat.jpg'
-import image3 from './Assets/Images/splat.jpg'
-import image4 from './Assets/Images/splat.jpg'
-import image5 from './Assets/Images/splat.jpg'
+import image1 from './Assets/Images/collabarray.jpg'
+import image2 from './Assets/Images/eshop.jpg'
+import image3 from './Assets/Images/noteTaker.jpg'
+import image4 from './Assets/Images/teamProfile.jpg'
 
-export default [image1,image2,image3,image4,image5]
+
+export default [image1,image2,image3,image4]
