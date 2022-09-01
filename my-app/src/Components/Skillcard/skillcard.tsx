@@ -8,7 +8,7 @@ import { useInView } from "framer-motion"
 
 function SkillCard() {
   const ref = useRef(null)
-  const isInView = useInView(ref)
+  const isInView = useInView(ref,{ once: true })
   return (
     <div>
       <Flex ref={ref}
