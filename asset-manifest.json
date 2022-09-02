@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.a55318cc.css",
+    "main.js": "/my-app/static/js/main.c245ac35.js",
+    "static/media/background.jpg": "/my-app/static/media/background.572ace77e4c875ac0eae.jpg",
+    "static/media/contact.jpg": "/my-app/static/media/contact.7f3e8c695abac73cb221.jpg",
+    "static/media/collabarray.jpg": "/my-app/static/media/collabarray.32d63faae29c584748f5.jpg",
+    "static/media/fredoka-one-all-400-normal.woff": "/my-app/static/media/fredoka-one-all-400-normal.5823e00913c9677e1611.woff",
+    "static/media/fredoka-one-latin-400-normal.woff2": "/my-app/static/media/fredoka-one-latin-400-normal.b6e379e2954728535156.woff2",
+    "static/media/teamProfile.jpg": "/my-app/static/media/teamProfile.7700935b3ce83a7b7348.jpg",
+    "index.html": "/my-app/index.html",
+    "main.a55318cc.css.map": "/my-app/static/css/main.a55318cc.css.map",
+    "main.c245ac35.js.map": "/my-app/static/js/main.c245ac35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a55318cc.css",
+    "static/js/main.c245ac35.js"
+  ]
+}
