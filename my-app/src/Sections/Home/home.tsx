@@ -16,14 +16,14 @@ function Home() {
         height="120vh"
         position="relative"
       >
-        {/* <Image
+        <Image
           src={Background}
           boxSize="xl"
           objectFit="cover"
           h="100%"
           alt='svg image'
           w="100%"
-          /> */}
+          />
 
         {/* <AspectRatio w="null" ratio={4 / 3}>
           <Image src={Background} alt='background' objectFit='cover' />
