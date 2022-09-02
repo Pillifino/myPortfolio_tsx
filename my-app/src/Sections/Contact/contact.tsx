@@ -1,13 +1,13 @@
 import React from 'react'
 
-import ContactBackground from "../../Assets/Images/contact.jpg"
+// import ContactBackground from "../../Assets/Images/contact.jpg"
 
 import { Flex, Image, FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Text } from "@chakra-ui/react"
 import RateCard from '../../Components/Ratecard/rateCard'
 
 function Contact() {
   return (
-    <div>
+    <>
       <Flex
         bg="white"
         h="100vh"
@@ -18,7 +18,7 @@ function Contact() {
         flexDirection="column"
       >
         <Image
-          src={ContactBackground}
+          src="https://img.freepik.com/free-vector/purple-fluid-background-frame_53876-99020.jpg?w=1800&t=st=1662105523~exp=1662106123~hmac=9bab992927adef5a1f3c9623f8359cc21a8ffc9ebb5cf96b5e141819d131a655"
           boxSize="xl"
           objectFit="cover"
           h="100%"
@@ -98,7 +98,7 @@ function Contact() {
           <RateCard />
         </Flex>
       </Flex>
-    </div>
+    </>
   )
 }
 
