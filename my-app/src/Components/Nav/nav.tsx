@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import ReactDOM from 'react-dom'
 
-import { Flex, Heading, Spacer, Text, Icon, IconButton, Link, Button } from '@chakra-ui/react'
+import { Flex, Heading, Spacer, Text, Icon, IconButton, Link } from '@chakra-ui/react'
 
 // Icons stuff
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'

@@ -2,7 +2,7 @@ import React from 'react'
 
 // import ContactBackground from "../../Assets/Images/contact.jpg"
 
-import { Flex, Image, FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Text } from "@chakra-ui/react"
+import { Flex, Image, FormControl, Input, Text } from "@chakra-ui/react"
 import RateCard from '../../Components/Ratecard/rateCard'
 
 function Contact() {
