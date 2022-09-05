@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Chakra
-import { Container, Flex } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
 import SkillCard from '../../Components/Skillcard/skillcard'
 
