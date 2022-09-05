@@ -1,7 +1,7 @@
 import { Container, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 
-import images from '../../images'
+// import images from '../../images'
 
 function Projects() {
   return (
@@ -24,7 +24,7 @@ function Projects() {
           maxWidth="80%"
           position="relative"
         >
-          {images.map((image)=> {
+          {/* {images.map((image)=> {
             return (
               <Image 
               src={image}
@@ -39,7 +39,7 @@ function Projects() {
               >
               </Image>
             );
-          })}
+          })} */}
         </Container>
       </Flex>
     </div>
